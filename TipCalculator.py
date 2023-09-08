@@ -5,6 +5,6 @@ people = int(input("How many people will be splitting this bill? "))
 
 bill_with_tip = tip / 100 * bill + bill 
 
-bill_split = bill_with_tip / people
+bill_split = round(bill_with_tip / people, 2)
 
-print("The bill split " + str(people) + "ways is: $" + str(bill_split))
+print("The bill split " + str(people) + " ways is: $" + str(bill_split))
